@@ -21,11 +21,6 @@ Pod::Spec.new do |s|
     
     sp.dependency 'PlayKit', '~> 3.22'
   end
-
-  s.xcconfig = {
-    ### The following is required for Xcode 12 (https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
   
 ################################################################
   
@@ -68,10 +63,6 @@ Pod::Spec.new do |s|
     sp.dependency 'DownloadToGo', '~> 3.15'
     sp.dependency 'PlayKit', '~> 3.22'
 
-    sp.xcconfig = {
-      ### The following is required for Xcode 12 (https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
 
   end
 
@@ -85,11 +76,6 @@ Pod::Spec.new do |s|
     sp.dependency 'PlayKitProviders', '~> 1.13'
     sp.dependency 'PlayKitKava', '~> 1.8'
 
-    sp.xcconfig = {
-      ### The following is required for Xcode 12 (https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
-
   end
 
   s.subspec 'Offline_OVP' do |sp|
@@ -101,11 +87,6 @@ Pod::Spec.new do |s|
     sp.dependency 'KalturaPlayer/Offline'
     sp.dependency 'PlayKitProviders', '~> 1.13'
     sp.dependency 'PlayKitKava', '~> 1.8'
-
-    sp.xcconfig = {
-      ### The following is required for Xcode 12 (https://stackoverflow.com/questions/63607158/xcode-12-building-for-ios-simulator-but-linking-in-object-file-built-for-ios)
-      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-    }
 
   end
   

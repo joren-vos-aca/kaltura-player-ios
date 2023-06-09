@@ -5,12 +5,12 @@ suffix = ''       # Release
 Pod::Spec.new do |s|
   
   s.name             = 'KalturaPlayer'
-  s.version          = '4.4.0' + suffix
+  s.version          = '4.4.1' + suffix
   s.summary          = 'KalturaPlayer -- Kaltura Player for iOS and tvOS'
-  s.homepage         = 'https://github.com/kaltura/kaltura-player-ios'
+  s.homepage         = 'https://github.com/joren-vos-aca/kaltura-player-ios'
   s.license          = { :type => 'AGPLv3', :file => 'LICENSE' }
   s.author           = { 'Kaltura' => 'community@kaltura.com' }
-  s.source           = { :git => 'https://github.com/kaltura/kaltura-player-ios.git', :tag => 'v' + s.version.to_s }
+  s.source           = { :git => 'https://github.com/joren-vos-aca/kaltura-player-ios.git', :tag => 'v' + s.version.to_s }
   s.swift_version    = '5.0'
   
   s.ios.deployment_target = '10.0'
